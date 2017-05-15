@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Création d'un programme complet de 'to do list' en js, html et css." />
+    <meta name="autor" content="Clémence Laffont" />
+    <title>ToDoList</title>
+    <link href="https://fonts.googleapis.com/css?family=Candal|Indie+Flower|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo principal" />
+        <h1>ToDoList</h1>
+    </header>
+
+    <main>
+        <form method="post" action="#">
+            <section>
+                <label for="caf">Chose à faire aujourd'hui :</label>
+                <input type="text" name="caf" id="caf" />
+            </section>
+            <input type="submit" id="ajouter" value="ajouter" />
+
+        </form>
+
+        <ul>
+            <li>
+                <div class="squared">
+                    <input type="checkbox" value="None" id="1" name="check" />
+                    <label for="1"></label>
+                </div>
+                <label>
+                    Cette ToDoList fonctionne avec javascript, si vous ne l'activez pas, cette page est inerte et ne sert a rien !
+                </label>
+                <button></button>
+            </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <h3>Site réalisé par Clémence Laffont dans le cadre de sa formation de developpeur web au sein de Simplon Lyon.</h3>
+    </footer>
+
+    <script type="text/javascript" src="js.js"></script>
+</body>
+
+</html>
