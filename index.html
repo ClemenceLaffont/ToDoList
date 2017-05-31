@@ -20,12 +20,12 @@
     </header>
 
     <main>
-        <form method="post" action="#">
+        <form method="post" action="#" id="ajouter">
             <section>
                 <label for="caf">Chose à faire aujourd'hui :</label>
                 <input type="text" name="caf" id="caf" />
             </section>
-            <input type="submit" id="ajouter" value="ajouter" />
+            <input type="submit" id="ajouter" value="" />
 
         </form>
 
@@ -35,9 +35,13 @@
                     <input type="checkbox" value="None" id="1" name="check" />
                     <label for="1"></label>
                 </div>
-                <label>
+                <form method="post" action="#" class="modif">
+                    <label>
                     Cette ToDoList fonctionne avec javascript, si vous ne l'activez pas, cette page est inerte et ne sert a rien !
-                </label>
+                    </label>
+                    <input type="text" id="1" name="modifcaf" />
+                    <input type="submit" id="1" name="modifsub" value="" />
+                </form>
                 <button></button>
             </li>
         </ul>
