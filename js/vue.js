@@ -26,7 +26,7 @@ let showElement = function(i) {
     inputtext.type = "text";
     inputtext.id = "text"+i;
     inputtext.name = "modifcaf";
-    inputtext.value = toDo[i].intitule;
+    inputtext.value = toDo[i].title;
     if(toDo[i].modif === true) {
         inputtext.style.display = "block";
     } else if(toDo[i].modif === false) {
@@ -80,13 +80,13 @@ let showElement = function(i) {
 let showToDo = function() {
     document.querySelector("ul").innerHTML = "";
     for (let i = 0; i < toDo.length; i = i + 1) {
-        if (affichage.all === true) {
+        if (display.all === true) {
             showElement(i);
-        } else if (affichage.toDo === true) {
+        } else if (display.toDo === true) {
             if (toDo[i].status === true) {
                  showElement(i);
             }
-        } else if (affichage.do === true) {
+        } else if (display.do === true) {
             if (toDo[i].status === false) {
                  showElement(i);
             }
